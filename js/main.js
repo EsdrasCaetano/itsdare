@@ -1,7 +1,6 @@
 
 
 const card = document.getElementById('cards')
-const card2 = document.getElementById('cards2')
 const url = 'https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1';
 fetch(url)
     .then(response =>
@@ -9,7 +8,7 @@ fetch(url)
     )
     .then(data => {
         console.log(data)
-      nextPage(data.nextPage)
+//      nextPage(data.nextPage)
        cardData(data.products)
     })
     .catch(err => console.log(err))
